@@ -5,11 +5,10 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .button_style {
+.button_style {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
     background-color: black;
-    text-transform: uppercase;
     letter-spacing: 0px;
     color: white;
     border: none;
@@ -26,6 +25,7 @@
   height: 1080px;
   color: #fff;
   text-align: left;
+  /* margin:auto; */
 }
 .header_section h1{
   color: white;
@@ -273,56 +273,75 @@
   background:#141824;
   color: white;
   text-align: left;
+  
 }
 
 .contact .content{
-  padding: 80px 80px;
+  padding: 180px 180px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:0px;
+  /* padding: 100px; */
+  display:grid;    
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
+
+
+
+.contact .content i{
+  font-size: 50px;
+  color:orange;
+  
+}
+
+.contact .content .icons i{
+  font-size: 30px;
+  color:orange;
+  padding: 10px;
+  
+}
+
+.contact .content h1{
+  font-size: 50px;
+  font-weight: 200;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact .content p{
+  line-height: 25px;
+}
+
+
+form input{
+  padding: 20px 400px 20px 20px;
+  margin-bottom: 20px;
+  background: #141824;
+  border:1px solid rgb(209, 209, 209);
+  text-align: left;
+  font-size: 20px;
+}
+textarea{
+  padding: 20px 325px 0px 20px;
+  margin-bottom: 20px;
+  background: #141824;
+  border:1px solid rgb(209, 209, 209);
+  color: grey;
+  text-align: left;
+  font-size: 20px;
+}
+.contact_btn{
+  background: white;
+  color: black;
+  margin-left:220px;
+}
+
+
+
 
 
 
 @media only screen and (max-width:480px){
-  .header_section{
-    background-image: url("images/header.jpg");
-    padding-top:30px; 
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: cover;
-    height: 850px;
-    color: #fff;
-    text-align: left;
-    /* margin:auto; */
-    align-items: left;
-  }
-  .header_section h1{
-    color: white;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    
-  }
-  
-  .header_section .grid_container{
-    grid-template-columns: 1fr;
-    grid-gap: 0px;  
-    padding-top: 100px;
-    display:grid;    
-    justify-content: left;
-    align-items: left;
-    align-content: left;
-    line-height: 25px;
-  }
-  h2{
-    font-size: 30px;
-    padding-top: 20px;
-  }
-  p{
-    padding-top: 30px;
-  }
-  i{
-    padding-top: 30px;
-    font-size: 40px;
-    color: yellow;
-  }
   
 }
