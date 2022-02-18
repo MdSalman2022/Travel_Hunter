@@ -343,6 +343,11 @@ textarea{
 
 
 @media only screen and (max-width:480px){
+  *{
+    div {
+      width: max-content;
+    }
+  }
   .button_style {
     font-size: 24px;
     font-weight: 400;
@@ -361,7 +366,7 @@ textarea{
   background-position: bottom center;
   background-size: cover;
   height: 100%;
-  width: 480px; 
+  width: 100%; 
   color: #fff;
   text-align: left;
   /* margin:auto; */
@@ -398,7 +403,7 @@ textarea{
 .container{
   background: #141824;
   padding: 50px;
-  width: 480px; 
+  width: 100%; 
   color: white;
 }
 
@@ -406,7 +411,7 @@ textarea{
 .learn{
   text-align: center;
   padding: 30px;
-  width: 480px; 
+  width: 100%; 
 }
 .learn h1{
   font-size: 20px;
@@ -428,7 +433,7 @@ textarea{
 }
 
 .container .grid_container{
-  grid-template-columns: 480px;
+  grid-template-columns: 1fr;
   grid-gap: 10px;  
   padding-top:10px;
   display:grid;    
@@ -455,12 +460,12 @@ textarea{
 .tour {
   background: #E8EAE3;
   height: 100%;
-  width: 480px; 
+  width: 100%; 
 }
 
 .tour img{
   padding: 10px;
-  width: 480px; 
+  width:90%; 
   object-fit: cover;
   justify-content: center;
   align-items: center;
@@ -489,12 +494,12 @@ textarea{
 }
 .tour .left{
   height: auto;
-  width: auto;
+  width: 100%;
   padding: 20px 20px;
 }
 
 .tour .grid_container{
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   grid-gap: 10px;  
   padding-top: 10px;
   display:grid;    
@@ -509,6 +514,7 @@ textarea{
   background: #141824;
   color: white;
   padding:50px;
+  width: 100%;
   text-align: center;
 }
 
@@ -531,7 +537,7 @@ textarea{
 
 .slider{
   height: 100%;
-  width: 480px; 
+  width: 343px; 
 
 }
 .slider .grid_container{
@@ -552,6 +558,7 @@ textarea{
 .earn{
   background:#E8EAE3;
   height: 100%;
+  width: 100%;
   /* padding: 80px 120px; */
 }
 
@@ -567,7 +574,7 @@ textarea{
 
 .earn img{
   padding: 20px;
-  width: 480px; 
+  width: 100%; 
   height: 450px;
   object-fit: cover;
   justify-content: center;
